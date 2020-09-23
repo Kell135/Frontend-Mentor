@@ -10,6 +10,9 @@ body {
   font-size: 0.9rem;
   position: relative;
 }
+div {
+  border-radius: 10px;
+}
 .page-container {
   position: relative;
 }
@@ -25,7 +28,6 @@ body {
 .right-box,
 .left-box {
   background-color: #1e2c69;
-  border-radius: 10px;
   margin: 20px;
 }
 .right-box {
@@ -36,8 +38,8 @@ body {
 }
 
 .left-box {
-  width: 55%;
-  min-width: 400px;
+  width: 50%;
+  min-width: 450px;
   height: 170px;
   margin-top: 50px;
 }
@@ -50,7 +52,6 @@ body {
   padding: 40px;
 }
 .specs {
-  border-radius: 10px;
   display: inline-block;
   width: 50px;
   height: 50px;
@@ -107,7 +108,7 @@ progress[value]::-webkit-progress-value {
   height: 5px;
   background-color: white;
   border: 5px solid white;
-  border-radius: 11px;
+  border-radius: 10px;
   position: relative;
   left: 78%;
   bottom: 21px;
@@ -170,25 +171,13 @@ div.end {
   body {
     background-size: auto 100%;
   }
-}
-
-@media (max-width: 500px) {
   .boxes {
-    padding: 20% 10% 40%;
-    display: block;
-    align-content: center;
+    padding: 10% 10% 20%;
+    flex-wrap: wrap;
   }
-
-  .right-box,
   .left-box {
-    margin: 0;
+    margin: 30px 0 30px 10px;
   }
-
-  .left-box {
-    min-width: 300px;
-    margin-top: 30px;
-  }
-
   div.end {
     margin-left: 69%;
   }
@@ -205,6 +194,12 @@ div.end {
     left: 20%;
     top: -20px;
     padding-left: 20px;
-    display: inline-block;
+    display: flex-block;
+  }
+}
+@media (max-width: 600px) {
+  .right-box,
+  .left-box {
+    min-width: 300px;
   }
 }
